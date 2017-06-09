@@ -1,4 +1,7 @@
-﻿using AForge.Imaging;
+﻿// Source of Original Code:
+// http://trompelecode.com/blog/2012/04/how-to-create-an-image-histogram-using-csharp-and-wpf/
+
+using AForge.Imaging;
 using System;
 using System.ComponentModel;
 using System.IO;
