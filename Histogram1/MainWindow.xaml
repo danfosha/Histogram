@@ -5,31 +5,45 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Histogram1"
         mc:Ignorable="d"
-        Title="Histogram1" Height="700" Width="900"  WindowStartupLocation="CenterScreen" Background="#F0F0F0" Loaded="OnWindowLoaded">    <!-- // MaxHeight="700" MaxWidth="900" -->
+        Title="Histogram1" Height="700" Width="900" WindowStartupLocation="CenterScreen" Background="#F0F0F0" Loaded="OnWindowLoaded">
     <Grid UseLayoutRounding="True">
+
         <!-- Main Grid, image on left, histograms on right -->
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="2*" /> <!-- Image grid -->
-            <ColumnDefinition Width="1*" /> <!-- Histogram grid -->
+            <!-- Image grid on left-->
+            <ColumnDefinition Width="2*" />
+            <!-- Histogram grid on right-->
+            <ColumnDefinition Width="1*" />
         </Grid.ColumnDefinitions>
 
+        <!-- Image side grid -->
         <Grid Grid.Column="0" Margin="20 20 10 20">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto" />  <!-- Image URL: label -->
-                <ColumnDefinition Width="*" />     <!-- Box for image location -->
-                <ColumnDefinition Width="Auto" />  <!-- Grid for Go Button -->
+                <!-- Image URL Label -->
+                <ColumnDefinition Width="Auto" />
+                <!-- Box for image location URI -->
+                <ColumnDefinition Width="*" />
+                <!-- Grid for Go Button -->
+                <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
+
             <Grid.RowDefinitions>
+                <!-- Image Row -->
                 <RowDefinition Height="*" />
+                <!-- File input row -->
                 <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
+                <!-- Blank - was for smoothing-->
+                <!--<RowDefinition Height="Auto" /> -->
             </Grid.RowDefinitions>
+
             <Image Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" Source="{Binding LocalImagePath}" Margin="0,0,0,20" HorizontalAlignment="Right" Width="565" Height="536" VerticalAlignment="Bottom"></Image>
-            <Label Grid.Column="0" Grid.Row="1">Image URL:</Label>
+            <Label Grid.Column="0" Grid.Row="1">File Name</Label>
             <TextBox Grid.Column="1" Grid.Row="1" Text="{Binding ImageURL}" Margin="2"/>
-            <Button Grid.Column="2" Grid.Row="1" Click="OnButtonClick" Width="40" Margin="2">Load</Button>
-            <CheckBox Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="2" IsChecked="{Binding PerformHistogramSmoothing}" Margin="6">Smooth Histogram</CheckBox>
+            <Button Grid.Column="2" Grid.Row="1" Click="OnButtonClick" Width="40" Margin="2">Go!</Button>
+
         </Grid>
+
+        <!-- Grid for histograms -->
         <Grid Grid.Column="1" Margin="4">
             <Grid.RowDefinitions>
                 <RowDefinition />
@@ -58,8 +72,10 @@
                 </Border>
             </GroupBox>
         </Grid>
-        <TextBlock FontSize="18" Height="30" VerticalAlignment="Top" Margin="20 10">
-                   <Hyperlink Foreground="Gray" Click="OnHyperlinkClick" NavigateUri="https://www.linkedin.com/in/daniel-fosha-02a5028/">Built by Daniel Fosha</Hyperlink>
+
+
+        <TextBlock FontSize="12" Height="20" VerticalAlignment="Top" Margin="20 10">
+				   <Hyperlink Foreground="Gray" Click="OnHyperlinkClick" NavigateUri="https://www.linkedin.com/in/daniel-fosha-02a5028/">Built by Daniel Fosha</Hyperlink>
         </TextBlock>
     </Grid>
 </Window>
