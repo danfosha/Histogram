@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/f2vavc4.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("old%20xaml.txt")]
 
 

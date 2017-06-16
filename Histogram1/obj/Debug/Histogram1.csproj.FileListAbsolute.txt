@@ -18,22 +18,16 @@ C:\Users\dani9096\Documents\Visual Studio 2015\Projects\Histogram1\obj\Debug\His
 C:\Users\dani9096\Documents\Visual Studio 2015\Projects\Histogram1\obj\Debug\Histogram1.exe
 C:\Users\dani9096\Documents\Visual Studio 2015\Projects\Histogram1\obj\Debug\Histogram1.pdb
 C:\Users\dani9096\Source\Repos\HistogramProj\Histogram1\bin\Debug\Histogram1.exe.config
-C:\Users\dani9096\Source\Repos\HistogramProj\Histogram1\obj\Debug\Histogram1.exe
-C:\Users\dani9096\Source\Repos\HistogramProj\Histogram1\obj\Debug\Histogram1.pdb
 C:\Users\dani9096\Source\Repos\HistogramProj\Histogram1\bin\Debug\Histogram1.exe
 C:\Users\dani9096\Source\Repos\HistogramProj\Histogram1\bin\Debug\Histogram1.pdb
-C:\Users\dani9096\Source\Repos\HistogramProj\Histogram1\bin\Debug\AForge.dll
-C:\Users\dani9096\Source\Repos\HistogramProj\Histogram1\bin\Debug\AForge.Imaging.dll
-C:\Users\dani9096\Source\Repos\HistogramProj\Histogram1\bin\Debug\AForge.Math.dll
-C:\Users\dani9096\Source\Repos\HistogramProj\Histogram1\bin\Debug\AForge.xml
-C:\Users\dani9096\Source\Repos\HistogramProj\Histogram1\bin\Debug\AForge.Imaging.xml
-C:\Users\dani9096\Source\Repos\HistogramProj\Histogram1\bin\Debug\AForge.Math.xml
-C:\Users\dani9096\Source\Repos\HistogramProj\Histogram1\obj\Debug\Histogram1.csprojResolveAssemblyReference.cache
 C:\Users\dani9096\Source\Repos\HistogramProj\Histogram1\obj\Debug\MainWindow.g.cs
 C:\Users\dani9096\Source\Repos\HistogramProj\Histogram1\obj\Debug\App.g.cs
 C:\Users\dani9096\Source\Repos\HistogramProj\Histogram1\obj\Debug\Histogram1_MarkupCompile.cache
 C:\Users\dani9096\Source\Repos\HistogramProj\Histogram1\obj\Debug\Histogram1_MarkupCompile.lref
 C:\Users\dani9096\Source\Repos\HistogramProj\Histogram1\obj\Debug\MainWindow.baml
+C:\Users\dani9096\Source\Repos\HistogramProj\Histogram1\obj\Debug\ResourceDictionaries\HistoBoxDictionary.baml
 C:\Users\dani9096\Source\Repos\HistogramProj\Histogram1\obj\Debug\Histogram1.g.resources
 C:\Users\dani9096\Source\Repos\HistogramProj\Histogram1\obj\Debug\Histogram1.Properties.Resources.resources
 C:\Users\dani9096\Source\Repos\HistogramProj\Histogram1\obj\Debug\Histogram1.csproj.GenerateResource.Cache
+C:\Users\dani9096\Source\Repos\HistogramProj\Histogram1\obj\Debug\Histogram1.exe
+C:\Users\dani9096\Source\Repos\HistogramProj\Histogram1\obj\Debug\Histogram1.pdb

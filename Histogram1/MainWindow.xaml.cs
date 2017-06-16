@@ -168,7 +168,7 @@ namespace Histogram1
 
             // is this necessary?
             var source = new BitmapImage(new System.Uri(LocalImagePath));
-            int bitsPerPixel = source.Format.BitsPerPixel;
+            //int bitsPerPixel = source.Format.BitsPerPixel;
 
 
             using (System.Drawing.Bitmap bmp = new System.Drawing.Bitmap(LocalImagePath))
@@ -179,9 +179,9 @@ namespace Histogram1
                 int[] blue_collection = new int[256];
                 int[] lum_collection = new int[256];
 
-                int stride = bmp.Width * 4;
-                int size = bmp.Height * stride;
-                byte[] pixels = new byte[size];
+                //int stride = bmp.Width * 4;
+                //int size = bmp.Height * stride;
+                //byte[] pixels = new byte[size];
 
                 for (int i = 0; i < bmp.Height; i++)
                 {

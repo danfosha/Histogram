@@ -6,6 +6,16 @@
         xmlns:local="clr-namespace:Histogram1"
         mc:Ignorable="d"
         Title="Histogram1" Height="700" Width="900" WindowStartupLocation="CenterScreen" Background="#F0F0F0" Loaded="OnWindowLoaded">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ResourceDictionaries\HistoBoxDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+
     <Grid UseLayoutRounding="True">
 
         <!-- Main Grid, image on left, histograms on right -->
@@ -51,25 +61,28 @@
                 <RowDefinition />
                 <RowDefinition />
             </Grid.RowDefinitions>
-            <GroupBox Grid.Column="0" Grid.Row="0" Header="Luminosity" BorderThickness="0">
-                <Border BorderThickness="1" BorderBrush="Black" Background="White" Margin="4">
-                    <Polygon Points="{Binding LuminanceHistogramPoints}" Stretch="Fill" Fill="Black" Opacity="0.8" />
+            <GroupBox Grid.Column="0" Grid.Row="0" Header="Luminosity" Style="{StaticResource histoGroupBox}">
+                <Border Style="{StaticResource histoBoxBorder}">
+                    <Polygon Points="{Binding LuminanceHistogramPoints}" Style="{StaticResource histoPolygon}"  Fill="Black"/>
                 </Border>
             </GroupBox>
-            <GroupBox Grid.Column="0" Grid.Row="1" Header="Red" BorderThickness="0">
-                <Border BorderThickness="1" BorderBrush="Black" Background="White" Margin="4">
-                    <Polygon Points="{Binding RedColorHistogramPoints}" Stretch="Fill" Fill="Red" Opacity="0.8" />
+
+            <GroupBox Grid.Column="0" Grid.Row="1" Header="Red" Style="{StaticResource histoGroupBox}">
+                <Border Style="{StaticResource histoBoxBorder}">
+                    <Polygon Points="{Binding RedColorHistogramPoints}" Style="{StaticResource histoPolygon}"  Fill="Red"/>
                 </Border>
             </GroupBox>
-            <GroupBox Grid.Column="0" Grid.Row="2" Header="Green" BorderThickness="0">
-                <Border BorderThickness="1" BorderBrush="Black" Background="White" Margin="4">
-                    <Polygon Points="{Binding GreenColorHistogramPoints}" Stretch="Fill" Fill="Green" Opacity="0.8" />
-                </Border>
+
+            <GroupBox Grid.Column="0" Grid.Row="2" Header="Green" Style="{StaticResource histoGroupBox}">
+            <Border Style="{StaticResource histoBoxBorder}">
+                    <Polygon Points="{Binding GreenColorHistogramPoints}" Style="{StaticResource histoPolygon}"  Fill="Green" />
+            </Border>
             </GroupBox>
-            <GroupBox Grid.Column="0" Grid.Row="3" Header="Blue" BorderThickness="0">
-                <Border BorderThickness="1" BorderBrush="Black" Background="White" Margin="4">
-                    <Polygon Points="{Binding BlueColorHistogramPoints}" Stretch="Fill" Fill="Blue" Opacity="0.8" />
-                </Border>
+
+            <GroupBox Grid.Column="0" Grid.Row="3" Header="Blue"  Style="{StaticResource histoGroupBox}">
+            <Border Style="{StaticResource histoBoxBorder}">
+                    <Polygon Points="{Binding BlueColorHistogramPoints}" Style="{StaticResource histoPolygon}" Fill="Blue"/>
+            </Border>
             </GroupBox>
         </Grid>
 
